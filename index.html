@@ -269,29 +269,34 @@
 
     <h1 class="heading"> <span>Contáctanos</span> </h1>
   
-    <div class="row">
-        <form action="https://formspree.io/f/xvgwnbaz" method="POST">
-          <h3>Envíanos un mensaje</h3>
-      
-          <div class="inputBox">
-            <span class="fas fa-user"></span>
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-          </div>
-      
-          <div class="inputBox">
-            <span class="fas fa-envelope"></span>
-            <input type="email" name="correo" placeholder="Tu correo" required>
-          </div>
-      
-          <div class="inputBox">
-            <span class="fas fa-phone"></span>
-            <input type="number" name="telefono" placeholder="Tu número">
-          </div>
-      
-          <textarea name="mensaje" placeholder="Escribe tu mensaje..." cols="30" rows="10" required></textarea>
-      
-          <input type="submit" value="Enviar" class="btn">
-        </form>
+   <div class="fila">
+  <form action="https://formspree.io/f/xvgwnbaz" method="POST">
+    <h3>Envíanos un mensaje</h3>
+
+    <div class="cuadro-de-entrada">
+      <i class="fas fa-user"></i>
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="cuadro-de-entrada">
+      <i class="fas fa-envelope"></i>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+    </div>
+
+    <div class="cuadro-de-entrada">
+      <i class="fas fa-phone"></i>
+      <input type="tel" name="telefono" placeholder="Tu número">
+    </div>
+
+    <textarea name="mensaje" placeholder="Escribe tu mensaje..." cols="30" rows="10" required></textarea>
+
+    <!-- 🌸 Este campo hace que Formspree envíe la respuesta automática -->
+    <input type="hidden" name="_autoresponse" value="¡Gracias por escribirnos a Maley’s! 🌷 Recibimos tu mensaje y en breve te responderemos con más información sobre nuestras flores eternas. 💐">
+
+    <input type="submit" value="Enviar" class="boton">
+  </form>
+</div>
+
       
         <div class="image">
           <img src="imagenes/20.png" alt="Flores Maley’s">
