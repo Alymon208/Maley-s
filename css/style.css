@@ -559,7 +559,7 @@ header .fa-bars{
 }
 
 .footer .box .links:hover {
-    color: blue;
+    color: var(--yellow);
     transform: translateX(5px);
 }
 
